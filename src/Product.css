@@ -15,7 +15,7 @@
 }
 
 .product > img {
-  max-height: 20rem;
+  max-height: 16rem;
   width: 100%;
   object-fit: contain;
   margin-bottom: 1.5rem;
@@ -27,12 +27,17 @@
   align-self: center;
 }
 
+.currency {
+  font-size: 1.5rem;
+}
+
 .product__price {
+  font-size: 3rem;
   margin-top: 0.5rem;
 }
 
 .product__price-secondary {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .product__rating {
@@ -62,4 +67,11 @@ button:visited {
 .product > button:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
   /* transform: translateY(0); */
+}
+
+.portfolio,
+.portfolio:link,
+.portfolio:visited {
+  text-decoration: none;
+  color: #111;
 }

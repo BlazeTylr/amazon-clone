@@ -2,7 +2,7 @@ import React from "react";
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
 
-function Product({ id, title, image, price, price_fraction, rating }) {
+function Portfolio({ id, title, image, price, price_fraction, rating }) {
   return (
     <div className="product">
       <div className="product__info">
@@ -23,9 +23,16 @@ function Product({ id, title, image, price, price_fraction, rating }) {
         </div>
       </div>
       <img src={image} alt="React book" />
-      <button className="addToBasket">Add to basket</button>
+      <button>
+        <a
+          href="https://balazs-szabo-portfolio.netlify.app/"
+          className="portfolio"
+        >
+          Portfolio
+        </a>
+      </button>
     </div>
   );
 }
 
-export default Product;
+export default Portfolio;
