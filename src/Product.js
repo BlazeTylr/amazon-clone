@@ -2,26 +2,27 @@ import React from "react";
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
 
-function Product() {
+function Product({ id, title, image, price, price_fraction, rating }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>React Cookbook: Recipes for Mastering the React Framework</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>£</small>
           <strong>
-            32<sup className="product__price-secondary">52</sup>
+            {price}
+            <sup className="product__price-secondary">{price_fraction}</sup>
           </strong>
         </p>
         <div className="product__rating">
-          <StarRateIcon />
-          <StarRateIcon />
-          <StarRateIcon />
-          <StarRateIcon />
-          <StarRateIcon />
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <StarRateIcon />
+            ))}
         </div>
       </div>
-      <img src={require("./img/react_cookbook.webp")} alt="React book" />
+      <img src={image} alt="React book" />
       <button>Add to basket</button>
     </div>
   );
