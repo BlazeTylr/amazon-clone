@@ -47,7 +47,11 @@
 
 .product > button,
 button:link,
-button:visited {
+button:visited,
+a,
+a:link,
+a:visited {
+  font-size: 1.4rem;
   background-color: #ffd813;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border: 1px solid;
@@ -57,21 +61,27 @@ button:visited {
   border-radius: 20px;
   padding: 0.7rem 3rem;
   transition: all 0.2s;
+  text-decoration: none;
+  color: #111;
 }
-.product > button:hover {
+.product > button:hover,
+a:hover {
   background-color: #f1cc11;
   /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12); */
   /* transform: translateY(-2px); */
 }
 
-.product > button:active {
+.product > button:active,
+a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
   /* transform: translateY(0); */
 }
 
-.portfolio,
-.portfolio:link,
-.portfolio:visited {
-  text-decoration: none;
-  color: #111;
+.section_hide {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(6rem);
 }

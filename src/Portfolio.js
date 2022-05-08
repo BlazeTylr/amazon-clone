@@ -23,14 +23,13 @@ function Portfolio({ id, title, image, price, price_fraction, rating }) {
         </div>
       </div>
       <img src={image} alt="React book" />
-      <button>
-        <a
-          href="https://balazs-szabo-portfolio.netlify.app/"
-          className="portfolio"
-        >
-          Portfolio
-        </a>
-      </button>
+
+      <a
+        href="https://balazs-szabo-portfolio.netlify.app/"
+        className="portfolio"
+      >
+        Portfolio
+      </a>
     </div>
   );
 }
