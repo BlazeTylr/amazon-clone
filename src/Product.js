@@ -1,32 +1,8 @@
 import React from "react";
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
-
-function Product({ id, title, image, price, price_fraction, rating }) {
-  return (
-    <div className="product">
-      <div className="product__info">
-        <p>{title}</p>
-        <p className="product__price">
-          <sup className="currency">£</sup>
-          <strong>
-            {price}
-            <sup className="product__price-secondary">{price_fraction}</sup>
-          </strong>
-        </p>
-        <div className="product__rating">
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <StarRateIcon />
-            ))}
-        </div>
-      </div>
-      <img src={image} alt="React book" />
-      <button className="addToBasket">Add to basket</button>
-    </div>
-  );
-}
+import { Link } from "@mui/material";
+import { useStateValue } from "./StateProvider";
 
 //////////////////////////////////
 // Reveal sections
@@ -49,5 +25,48 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+
+function Product({ id, title, image, price, whole, fraction, rating }) {
+  const [basket, dispatch] = useStateValue();
+  console.log("this is the basket", basket);
+  const addToBasket = () => {
+    //dispatch the item into the data layer
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+
+  return (
+    <div className="product">
+      <div className="product__info">
+        <p>{title}</p>
+        <p className="product__price">
+          <sup className="currency">£</sup>
+          <strong className="priceOffScreen">{price}</strong>
+          <strong>{whole}</strong>
+          <sup className="product__price-fraction">{fraction}</sup>
+        </p>
+        <div className="product__rating">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <StarRateIcon />
+            ))}
+        </div>
+      </div>
+      <img src={image} alt="" />
+      <button onClick={addToBasket} className="addToBasket">
+        Add to basket
+      </button>
+    </div>
+  );
+}
 
 export default Product;
