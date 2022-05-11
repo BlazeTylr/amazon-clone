@@ -14,18 +14,21 @@ function Header() {
         <Link to="/">
           <img src={require("./img/amazon_logo.png")} alt="amazon logo" className="header__logo" />
         </Link>
-
-        <span class="nav-logo-locale">.co.uk</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span class="nav-logo-locale">.co.uk</span>
+        </Link>
       </div>
       <div className="header__search">
         <input className="header__searchInput" type="text"></input>
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
-        <div className="header__option">
-          <span className="header__optionLineOne">Hello,</span>
-          <span className="header__optionLineTwo">sign in</span>
-        </div>
+        <Link to="/login">
+          <div className="header__option">
+            <span className="header__optionLineOne">Hello,</span>
+            <span className="header__optionLineTwo">sign in</span>
+          </div>
+        </Link>
         <div className="header__option">
           <span className="header__optionLineOne">Returns</span>
           <span className="header__optionLineTwo">& Orders</span>

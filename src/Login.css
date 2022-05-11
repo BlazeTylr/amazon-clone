@@ -1,0 +1,113 @@
+.login {
+  font-size: 1.6rem;
+  background-color: #fff;
+  height: 100vh;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__logo {
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+  width: 100px;
+}
+
+.login__container {
+  width: 30rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 2rem;
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 0.5rem;
+}
+
+.login__input {
+  height: 3rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  width: 94.5%;
+  border: 1px solid #a6a6a6;
+  border-top-color: #949494;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+  outline: 0;
+  height: 24px;
+  padding: 3px 7px;
+  line-height: normal;
+}
+
+.login__input:focus {
+  border: 1px solid #a6a6a6;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+
+.login__container > form > p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.login__signInBtn {
+  display: block;
+  background: #f3d078;
+  background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 40%) inset;
+  border-radius: 3px;
+  width: 100% !important;
+  height: 30px;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+  outline: 0;
+  border: 1px solid #a6a6a6;
+}
+
+.login__signInBtn:active {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #9c7e31;
+  linear-gradient: (to bottom, #f5d78e, #eeb933);
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+
+.login__registerBtn {
+  background: #e7e9ec;
+  border-radius: 3px;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 1rem;
+  height: 30px;
+  padding: 0 10px 0 11px;
+  color: #111;
+}
+
+.login__registerBtn:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+.login__registerBtn:active {
+  background-color: #dcdfe3;
+  background: #d7d9dc;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}

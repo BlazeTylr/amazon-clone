@@ -1,7 +1,6 @@
 import React from "react";
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { Link } from "@mui/material";
 import { useStateValue } from "./StateProvider";
 
 //////////////////////////////////
@@ -26,8 +25,8 @@ allSections.forEach(function (section) {
   section.classList.add("section--hidden");
 });
 
-function Product({ id, title, image, price, whole, fraction, rating }) {
-  const [basket, dispatch] = useStateValue();
+function Product({ id, title, image, price, rating, whole, fraction }) {
+  const [{ basket }, dispatch] = useStateValue();
   console.log("this is the basket", basket);
   const addToBasket = () => {
     //dispatch the item into the data layer
