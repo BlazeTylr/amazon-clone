@@ -10,7 +10,6 @@ const allSections = document.querySelectorAll(".section_hide");
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);
@@ -27,7 +26,6 @@ allSections.forEach(function (section) {
 
 function Product({ id, title, image, price, rating, whole, fraction }) {
   const [{ basket }, dispatch] = useStateValue();
-  console.log("this is the basket", basket);
   const addToBasket = () => {
     //dispatch the item into the data layer
     dispatch({

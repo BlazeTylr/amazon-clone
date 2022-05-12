@@ -88,3 +88,7 @@ span {
 .header__basketCount {
   margin: 0 1rem;
 }
+
+.link {
+  text-decoration: none;
+}
