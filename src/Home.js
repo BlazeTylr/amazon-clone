@@ -34,9 +34,7 @@ function Home() {
         </div>
         <div className="home__row thirdRow">
           <Product
-            title={
-              "Javascript Logo. 11 Oz Ceramic Coffee Mug Also Makes A Great Tea Cup with Its Large, Easy to Grip C-Handle."
-            }
+            title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle."}
             price={12.98}
             whole={12}
             fraction={98}
@@ -50,9 +48,7 @@ function Home() {
             rating={5}
           />
           <Product
-            title={
-              "DELL - DISPLAY B2B DELL ULTRASHARP 27 4K USB-C HUB MONITOR - U2723QE - 68.47CM."
-            }
+            title={"DELL - DISPLAY B2B DELL ULTRASHARP 27 4K USB-C HUB MONITOR."}
             price={843.87}
             whole={843}
             fraction={87}
@@ -84,9 +80,7 @@ function Home() {
         </div>
         <div className="section_hide home__row">
           <Product
-            title={
-              "Javascript Logo. 11 Oz Ceramic Coffee Mug Also Makes A Great Tea Cup with Its Large, Easy to Grip C-Handle."
-            }
+            title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle."}
             price={12.98}
             whole={12}
             fraction={98}

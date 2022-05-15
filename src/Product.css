@@ -17,9 +17,39 @@
 .product > img {
   max-height: 16rem;
   padding: 2rem;
+  margin: 2rem;
   width: 100%;
   object-fit: contain;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 75em) {
+  .product > img,
+  .developer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .product > img,
+  .developer {
+    width: 80%;
+  }
+
+  .product {
+    justify-content: space-between;
+  }
+
+  .product > button {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .product > img,
+  .developer {
+    width: 60%;
+  }
 }
 
 .product__info {

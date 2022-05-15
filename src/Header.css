@@ -92,3 +92,52 @@ span {
 .link {
   text-decoration: none;
 }
+
+@media (max-width: 50em) {
+  .header__nav {
+    align-items: center !important;
+  }
+
+  .cart-icon {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .header__option {
+    opacity: 0;
+  }
+
+  .cart-icon {
+    font-size: 28px !important;
+  }
+
+  .header__visible {
+    opacity: 1 !important;
+  }
+
+  .header__notVisible {
+    display: none;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    max-width: 100% !important;
+  }
+
+  .header__search {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    padding: 0 2rem;
+  }
+
+  .header__nav {
+    grid-column: 3 / -1;
+    justify-self: end;
+  }
+}
