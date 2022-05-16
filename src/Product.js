@@ -6,24 +6,6 @@ import { useStateValue } from "./StateProvider";
 //////////////////////////////////
 // Reveal sections
 
-const allSections = document.querySelectorAll(".section_hide");
-
-const revealSection = function (entries, observer) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section--hidden");
-  observer.unobserve(entry.target);
-};
-
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.25,
-});
-allSections.forEach(function (section) {
-  sectionObserver.observe(section);
-  section.classList.add("section--hidden");
-});
-
 function Product({ id, title, image, price, rating, whole, fraction }) {
   const [{ basket }, dispatch] = useStateValue();
   const addToBasket = () => {

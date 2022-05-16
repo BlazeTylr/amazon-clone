@@ -119,6 +119,10 @@ span {
   .header__notVisible {
     display: none;
   }
+
+  .header__logo {
+    width: 7.5rem;
+  }
 }
 
 @media (max-width: 31.25em) {
