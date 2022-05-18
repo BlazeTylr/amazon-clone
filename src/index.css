@@ -41,9 +41,3 @@ code {
     font-size: 50%;
   }
 }
-
-@media (max-width: 50em) {
-  html {
-    font-size: 40%;
-  }
-}

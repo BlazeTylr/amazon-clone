@@ -25,3 +25,17 @@
     margin-bottom: -19rem;
   }
 }
+
+@media (max-width: 31.25em) {
+  .home__row--second,
+  .home__row--first {
+    flex-direction: column;
+    max-width: 32rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .home__image {
+    margin-bottom: -10rem;
+  }
+}

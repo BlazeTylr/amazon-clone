@@ -21,7 +21,7 @@ function Header() {
         <Link to="/">
           <img src={require("./img/amazon_logo.png")} alt="amazon logo" className="header__logo" />
         </Link>
-        <Link className="link" to="/">
+        <Link className="link link-logo" to="/">
           <span class="nav-logo-locale">.co.uk</span>
         </Link>
       </div>

@@ -30,7 +30,7 @@ function Home() {
           src={require("./img/amazon_hero.webp")}
           alt="amazon hero img"
         />
-        <div className="home__row">
+        <div className="home__row home__row--first">
           <Product
             title={"React Cookbook: Recipes for Mastering the React Framework"}
             price={29.99}
@@ -40,9 +40,7 @@ function Home() {
             rating={5}
           />
           <Product
-            title={
-              "2021 Apple MacBook Pro (16-inch, Apple M1 Pro chip with 10‑core CPU and 16‑core GPU, 16GB RAM, 512GB SSD) - Space Grey"
-            }
+            title={"2021 Apple MacBook Pro (16-inch, Apple M1 Pro chip) - Space Grey"}
             price={2119.99}
             whole={"2,119"}
             fraction={99}
@@ -50,9 +48,9 @@ function Home() {
             rating={5}
           />
         </div>
-        <div className="home__row thirdRow">
+        <div className="home__row home__row--second">
           <Product
-            title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle."}
+            title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle"}
             price={12.98}
             whole={12}
             fraction={98}
@@ -60,13 +58,13 @@ function Home() {
             rating={4}
           />
           <Portfolio
-            title={"React developer. Reliable, hardworking, accurate & team player."}
+            title={"React developer. Reliable, hardworking, accurate & team player"}
             price={"get in touch"}
             image={require("./img/profile-pic.webp")}
             rating={5}
           />
           <Product
-            title={"DELL - DISPLAY B2B DELL ULTRASHARP 27 4K USB-C HUB MONITOR."}
+            title={"Dell - Display B2B Dell ULTRASHARP 27 4K USB-C HUB Monitor"}
             price={843.87}
             whole={843}
             fraction={87}
@@ -76,9 +74,7 @@ function Home() {
         </div>
         <div className="section_hide home__row">
           <Product
-            title={
-              "IBM wireless keyboard. Opto-Mechanical Keys, Optical Drive, Key Stabilizer Bar, Unmatched Durability."
-            }
+            title={"IBM wireless keyboard. Opto-Mechanical Keys, Optical Drive"}
             price={129.45}
             whole={129}
             fraction={45}
@@ -86,9 +82,7 @@ function Home() {
             rating={2}
           />
           <Product
-            title={
-              "Microsoft Windows Professional 32 / 64 bit - License Only. Most advanced operating system."
-            }
+            title={"Microsoft Windows Professional 32 / 64 bit - License Only"}
             price={98.99}
             whole={98}
             fraction={99}
@@ -96,29 +90,31 @@ function Home() {
             rating={5}
           />
         </div>
-        <div className="section_hide home__row">
+        <div className="section_hide home__row home__row--second">
           <Product
-            title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle."}
-            price={12.98}
-            whole={12}
-            fraction={98}
-            image={require("./img/javascript_mug.webp")}
+            title={"Echo Dot (4th generation) | Smart speaker with Alexa"}
+            price={27.99}
+            whole={27}
+            fraction={99}
+            image={require("./img/amazon-echo.webp")}
             rating={4}
-          />
-          <Portfolio
-            title={"React developer. Reliable, hardworking, accurate & team player."}
-            price={"get in touch"}
-            image={require("./img/profile-pic.webp")}
-            rating={5}
           />
           <Product
             title={
-              "DELL - DISPLAY B2B DELL ULTRASHARP 27 4K USB-C HUB MONITOR - U2723QE - 68.47CM."
+              "Fire TV Stick with Alexa Voice Remote (includes TV controls) | HD streaming device"
             }
-            price={843.87}
-            whole={843}
-            fraction={87}
-            image={require("./img/dell_monitor.webp")}
+            price={39.99}
+            whole={39}
+            fraction={99}
+            image={require("./img/fire_stick.webp")}
+            rating={4}
+          />
+          <Product
+            title={"Van Gogh. The Complete Paintings"}
+            price={46.72}
+            whole={46}
+            fraction={72}
+            image={require("./img/van_gogh.webp")}
             rating={4}
           />
         </div>

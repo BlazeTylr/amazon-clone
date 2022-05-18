@@ -29,7 +29,7 @@ function Product({ id, title, image, price, rating, whole, fraction }) {
         <p className="product__price">
           <sup className="currency">£</sup>
           <strong className="priceOffScreen">{price}</strong>
-          <strong>{whole}</strong>
+          <strong className="product__price-whole">{whole}</strong>
           <sup className="product__price-fraction">{fraction}</sup>
         </p>
         <div className="product__rating">

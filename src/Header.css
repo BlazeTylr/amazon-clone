@@ -113,6 +113,7 @@ span {
   }
 
   .header__visible {
+    margin-right: 2rem;
     opacity: 1 !important;
   }
 
@@ -121,12 +122,14 @@ span {
   }
 
   .header__logo {
-    width: 7.5rem;
+    width: 9rem;
+    margin-bottom: -0.8rem;
   }
 }
 
 @media (max-width: 31.25em) {
   .header {
+    background-color: #222f3e;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -143,5 +146,13 @@ span {
   .header__nav {
     grid-column: 3 / -1;
     justify-self: end;
+  }
+
+  .header__option {
+    width: 100%;
+  }
+
+  .link-logo {
+    margin-top: 1rem;
   }
 }

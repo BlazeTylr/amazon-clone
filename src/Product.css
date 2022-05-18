@@ -26,14 +26,14 @@
 @media (max-width: 75em) {
   .product > img,
   .developer {
-    width: 90%;
+    height: 90%;
   }
 }
 
 @media (max-width: 62.5em) {
   .product > img,
   .developer {
-    width: 80%;
+    height: 80%;
   }
 
   .product {
@@ -48,7 +48,25 @@
 @media (max-width: 50em) {
   .product > img,
   .developer {
-    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .product > img,
+  .developer {
+    max-height: 17rem;
+    margin: 2rem 0 1rem;
+    padding: 1rem;
+  }
+
+  .product > button,
+  button:link,
+  button:visited,
+  .portfolio,
+  .portfolio:link,
+  .portfolio:visited {
+    font-size: 1.2rem;
   }
 }
 
