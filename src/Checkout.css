@@ -43,6 +43,12 @@
   padding-left: 1rem;
 }
 
+@media (max-width: 50em) {
+  .checkout {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (max-width: 37.5em) {
   .checkout {
     grid-template-rows: repeat(auto-fit, 5, 1fr);
@@ -53,18 +59,14 @@
     grid-row: 2 / 3;
   }
 
-  .checkout__ad {
-    /* opacity: 0;
-    height: 0; */
-  }
-
   .checkout__items {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     margin: 0 auto;
     padding: 0 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .checkout__title {
+  .checkout__ad {
   }
 }
