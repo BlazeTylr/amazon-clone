@@ -6,7 +6,7 @@
 }
 
 .checkoutProduct__info {
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 
 .checkoutProduct__info > button {
@@ -38,6 +38,7 @@
   object-fit: contain;
   width: 18rem;
   height: 18rem;
+  margin-right: 2rem;
 }
 
 .checkoutProduct__rating {
@@ -48,4 +49,30 @@
   font-size: 1.7rem;
   font-weight: 500;
   width: 90%;
+}
+
+@media (max-width: 40.6em) {
+  .checkoutProduct {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+  }
+
+  .checkoutProduct__image {
+    grid-row: 1 / 2;
+    justify-self: center;
+    margin-right: 0;
+  }
+
+  .checkoutProduct__title,
+  .checkoutProduct__price,
+  .checkoutProduct__rating {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .checkoutProduct__btn {
+    display: block;
+    margin: 0 auto;
+  }
 }

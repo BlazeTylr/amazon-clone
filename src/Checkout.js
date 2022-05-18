@@ -9,29 +9,23 @@ function Checkout() {
 
   return (
     <div className="checkout">
-      <div className="checkout__left">
-        <img
-          src={require("./img/amazon_credit_ad.webp")}
-          alt="amazon ad"
-          className="checkout__ad"
-        />
-        <div>
-          <h3 className="checkout__name">Hello, {user?.email}</h3>
-          <h2 className="checkout__title">Your shopping basket</h2>
-          {basket.map((item) => (
-            <CheckoutProduct
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))}
-        </div>
+      <img src={require("./img/amazon_credit_ad.webp")} alt="amazon ad" className="checkout__ad" />
+      <div className="checkout__items">
+        <h3 className="checkout__name">Hello, {user?.email}</h3>
+        <h2 className="checkout__title">Your shopping basket</h2>
+        {basket.map((item) => (
+          <CheckoutProduct
+            className="checkout__product"
+            id={item.id}
+            title={item.title}
+            image={item.image}
+            price={item.price}
+            rating={item.rating}
+          />
+        ))}
       </div>
-      <div className="checkout__right">
-        <Subtotal />
-      </div>
+
+      <Subtotal />
     </div>
   );
 }
