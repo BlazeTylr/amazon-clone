@@ -48,7 +48,7 @@ function Home() {
             rating={5}
           />
         </div>
-        <div className="home__row home__row--second">
+        <div className="home__row home__row--second section_hide">
           <Product
             title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle"}
             price={12.98}
