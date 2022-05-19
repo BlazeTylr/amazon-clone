@@ -32,6 +32,7 @@ function Home() {
         />
         <div className="home__row">
           <Product
+            id="12321373"
             title={"React Cookbook: Recipes for Mastering the React Framework"}
             price={29.99}
             whole={29}
@@ -40,6 +41,7 @@ function Home() {
             rating={5}
           />
           <Product
+            id="12321341"
             title={"2021 Apple MacBook Pro (16-inch, Apple M1 Pro chip) - Space Grey"}
             price={2119.99}
             whole={"2,119"}
@@ -50,6 +52,7 @@ function Home() {
         </div>
         <div className="home__row section_hide">
           <Product
+            id="13481341"
             title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle"}
             price={12.98}
             whole={12}
@@ -64,6 +67,7 @@ function Home() {
             rating={5}
           />
           <Product
+            id="12382541"
             title={"Dell - Display B2B Dell ULTRASHARP 27 4K USB-C HUB Monitor"}
             price={843.87}
             whole={843}
@@ -74,6 +78,7 @@ function Home() {
         </div>
         <div className="section_hide home__row">
           <Product
+            id="12339671"
             title={"IBM wireless keyboard. Opto-Mechanical Keys, Optical Drive"}
             price={129.45}
             whole={129}
@@ -82,6 +87,7 @@ function Home() {
             rating={2}
           />
           <Product
+            id="12732121"
             title={"Microsoft Windows Professional 32 / 64 bit - License Only"}
             price={98.99}
             whole={98}
@@ -92,6 +98,7 @@ function Home() {
         </div>
         <div className="section_hide home__row">
           <Product
+            id="12385784"
             title={"Echo Dot (4th generation) | Smart speaker with Alexa"}
             price={27.99}
             whole={27}
@@ -100,6 +107,7 @@ function Home() {
             rating={4}
           />
           <Product
+            id="12320909"
             title={
               "Fire TV Stick with Alexa Voice Remote (includes TV controls) | HD streaming device"
             }
@@ -110,6 +118,7 @@ function Home() {
             rating={4}
           />
           <Product
+            id="12387876"
             title={"Van Gogh. The Complete Paintings"}
             price={46.72}
             whole={46}
