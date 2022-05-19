@@ -28,8 +28,7 @@
 }
 
 @media (max-width: 31.25em) {
-  .home__row--second,
-  .home__row--first {
+  .home__row {
     flex-direction: column;
     max-width: 32rem;
     align-items: center;

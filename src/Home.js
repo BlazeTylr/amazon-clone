@@ -30,7 +30,7 @@ function Home() {
           src={require("./img/amazon_hero.webp")}
           alt="amazon hero img"
         />
-        <div className="home__row home__row--first">
+        <div className="home__row">
           <Product
             title={"React Cookbook: Recipes for Mastering the React Framework"}
             price={29.99}
@@ -48,7 +48,7 @@ function Home() {
             rating={5}
           />
         </div>
-        <div className="home__row home__row--second section_hide">
+        <div className="home__row section_hide">
           <Product
             title={"Javascript Logo. 11 Oz Ceramic Coffee Mug. Easy to Grip C-Handle"}
             price={12.98}
@@ -90,7 +90,7 @@ function Home() {
             rating={5}
           />
         </div>
-        <div className="section_hide home__row home__row--second">
+        <div className="section_hide home__row">
           <Product
             title={"Echo Dot (4th generation) | Smart speaker with Alexa"}
             price={27.99}
