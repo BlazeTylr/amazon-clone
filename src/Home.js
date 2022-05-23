@@ -2,25 +2,27 @@ import React from "react";
 import "./Home.css";
 import Product from "./Product";
 import Portfolio from "./Portfolio";
+import Fade from "react-reveal/Fade";
 
 function Home() {
-  const allSections = document.querySelectorAll(".section_hide");
+  // const allSections = document.querySelectorAll(".section_hide");
 
-  const revealSection = function (entries, observer) {
-    const [entry] = entries;
-    if (!entry.isIntersecting) return;
-    entry.target.classList.remove("section--hidden");
-    observer.unobserve(entry.target);
-  };
+  // const revealSection = function (entries, observer) {
+  //   const [entry] = entries;
+  //   if (!entry.isIntersecting) return;
+  //   entry.target.classList.remove("section--hidden");
+  //   observer.unobserve(entry.target);
+  //   entry.preventDefault();
+  // };
 
-  const sectionObserver = new IntersectionObserver(revealSection, {
-    root: null,
-    threshold: 0.25,
-  });
-  allSections.forEach(function (section) {
-    sectionObserver.observe(section);
-    section.classList.add("section--hidden");
-  });
+  // const sectionObserver = new IntersectionObserver(revealSection, {
+  //   root: null,
+  //   threshold: 0.25,
+  // });
+  // allSections.forEach(function (section) {
+  //   sectionObserver.observe(section);
+  //   section.classList.add("section--hidden");
+  // });
 
   return (
     <div className="home">
@@ -76,57 +78,61 @@ function Home() {
             rating={4}
           />
         </div>
-        <div className="section_hide home__row">
-          <Product
-            id="12339671"
-            title={"IBM wireless keyboard. Opto-Mechanical Keys, Optical Drive"}
-            price={129.45}
-            whole={129}
-            fraction={45}
-            image={require("./img/IBM_Model_M.webp")}
-            rating={2}
-          />
-          <Product
-            id="12732121"
-            title={"Microsoft Windows Professional 32 / 64 bit - License Only"}
-            price={98.99}
-            whole={98}
-            fraction={99}
-            image={require("./img/Microsoft_Windows.webp")}
-            rating={5}
-          />
-        </div>
-        <div className="section_hide home__row">
-          <Product
-            id="12385784"
-            title={"Echo Dot (4th generation) | Smart speaker with Alexa"}
-            price={27.99}
-            whole={27}
-            fraction={99}
-            image={require("./img/amazon-echo.webp")}
-            rating={4}
-          />
-          <Product
-            id="12320909"
-            title={
-              "Fire TV Stick with Alexa Voice Remote (includes TV controls) | HD streaming device"
-            }
-            price={39.99}
-            whole={39}
-            fraction={99}
-            image={require("./img/fire_stick.webp")}
-            rating={4}
-          />
-          <Product
-            id="12387876"
-            title={"Van Gogh. The Complete Paintings"}
-            price={46.72}
-            whole={46}
-            fraction={72}
-            image={require("./img/van_gogh.webp")}
-            rating={4}
-          />
-        </div>
+        <Fade bottom>
+          <div className="section_hide home__row">
+            <Product
+              id="12339671"
+              title={"IBM wireless keyboard. Opto-Mechanical Keys, Optical Drive"}
+              price={129.45}
+              whole={129}
+              fraction={45}
+              image={require("./img/IBM_Model_M.webp")}
+              rating={2}
+            />
+            <Product
+              id="12732121"
+              title={"Microsoft Windows Professional 32 / 64 bit - License Only"}
+              price={98.99}
+              whole={98}
+              fraction={99}
+              image={require("./img/Microsoft_Windows.webp")}
+              rating={5}
+            />
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div className="section_hide home__row">
+            <Product
+              id="12385784"
+              title={"Echo Dot (4th generation) | Smart speaker with Alexa"}
+              price={27.99}
+              whole={27}
+              fraction={99}
+              image={require("./img/amazon-echo.webp")}
+              rating={4}
+            />
+            <Product
+              id="12320909"
+              title={
+                "Fire TV Stick with Alexa Voice Remote (includes TV controls) | HD streaming device"
+              }
+              price={39.99}
+              whole={39}
+              fraction={99}
+              image={require("./img/fire_stick.webp")}
+              rating={4}
+            />
+            <Product
+              id="12387876"
+              title={"Van Gogh. The Complete Paintings"}
+              price={46.72}
+              whole={46}
+              fraction={72}
+              image={require("./img/van_gogh.webp")}
+              rating={4}
+            />
+          </div>
+        </Fade>
       </div>
     </div>
   );
