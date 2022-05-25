@@ -22,7 +22,7 @@
   position: absolute;
 }
 
-.header__logo {
+.payment__logo {
   width: 10rem;
   object-fit: contain;
   margin: 1.8rem 2rem 0;
@@ -35,7 +35,7 @@
   color: black;
   font-size: 1.4rem;
   font-weight: 500;
-  margin: 2.1rem 1.6rem 0 -2rem;
+  margin: 2.05rem 1.6rem 0 -2rem;
 }
 
 span {
@@ -67,8 +67,12 @@ span {
 }
 
 .payment__title > h3 {
-  flex: 0.2;
   margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.payment__title-credit {
+  font-size: 1.8rem;
 }
 
 .payment__address {
@@ -81,6 +85,84 @@ span {
   margin: 0 20px;
   border-bottom: 1px solid #dfe2e2;
 }
+
+.payment__section-method {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 30rem;
+  margin: 0 auto;
+  height: 14rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+.payment__subtotal > button,
+button:link,
+button:visited {
+  font-size: 1.4rem;
+  background-color: #ffd813;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+  margin-top: 1rem;
+  border: none;
+  color: #111;
+  border-radius: 8px;
+  padding: 0.7rem 3rem;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+}
+
+.payment__subtotal > button:hover {
+  background-color: #f1cc11;
+}
+
+.payment__subtotal > button:active {
+  background-color: #ffd813;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.payment__vat {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.payment__terms {
+  font-size: 1rem;
+  margin: 1rem auto;
+  position: realtive;
+  text-align: center;
+}
+
+@media (max-width: 62.5em) {
+  .payment-logo-locale {
+    margin-top: 2.05rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .payment-logo-locale {
+    margin-top: 2.3rem;
+  }
+}
+
+/* @media (max-width: 37.5em) {
+  .payment-logo-locale {
+    margin-top: 2.3rem;
+  }
+} */
 
 @media (max-width: 31.25em) {
   .payment__header > h1 {
@@ -100,6 +182,6 @@ span {
   }
 
   .payment-logo-locale {
-    margin-top: 2.05rem;
+    margin-top: 2.3rem;
   }
 }

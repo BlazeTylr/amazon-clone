@@ -3,9 +3,21 @@ import "./Payment.css";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import { Link } from "react-router-dom";
+import CurrencyFormat from "react-currency-format";
+import { getBasketTotal } from "./reducer";
+import { useNavigate } from "react-router-dom";
 
 function Payment() {
+  const navigate = useNavigate();
+
   const [{ basket, user }, dispatch] = useStateValue();
+
+  const removeItemsFromBasket = () => {
+    dispatch({
+      type: "EMPTY_BASKET",
+    });
+    navigate("/");
+  };
 
   return (
     <div className="payment">
@@ -15,7 +27,7 @@ function Payment() {
             <img
               src={require("./img/amazon_logo_dark.webp")}
               alt="amazon logo"
-              className="header__logo"
+              className="payment__logo"
             />
           </Link>
           <Link className="link link-logo" to="/">
@@ -54,11 +66,36 @@ function Payment() {
             </div>
           </div>
         </div>
-        <div className="payment__section">
+        <div className="payment__section payment__section-method">
           <div className="payment__title">
             <h3>Payment method</h3>
+            <p className="payment__title-credit">Amazon credit card</p>
           </div>
-          <div className="payment__details"></div>
+          <div className="payment__details">
+            <div className="payment__subtotal">
+              <CurrencyFormat
+                renderText={(value) => (
+                  <>
+                    <p>
+                      Subtotal ({basket.length} items):
+                      <strong> {value}</strong>
+                    </p>
+                  </>
+                )}
+                decimalScale={2}
+                value={getBasketTotal(basket)}
+                displayType={"text"}
+                thousendSeparator={true}
+                prefix={"£"}
+              />
+              <p className="payment__vat">Order totals include VAT.</p>
+              <p className="payment__terms">
+                By placing your order you agree to Amazon's Conditions of Use & Sale. Please see our
+                Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+              </p>
+              <button onClick={removeItemsFromBasket}>Buy now</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
