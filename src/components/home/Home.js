@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import Product from "./Product";
-import Portfolio from "./Portfolio";
+import Product from "../product/Product";
+import Portfolio from "../portfolio/Portfolio";
 import Fade from "react-reveal/Fade";
 
 function Home() {
@@ -29,7 +29,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src={require("./img/amazon_hero.webp")}
+          src={require("../../img/amazon_hero.webp")}
           alt="amazon hero img"
         />
         <div className="home__row">
@@ -39,7 +39,7 @@ function Home() {
             price={29.99}
             whole={29}
             fraction={99}
-            image={require("./img/react_cookbook.webp")}
+            image={require("../../img/react_cookbook.webp")}
             rating={5}
           />
           <Product
@@ -48,7 +48,7 @@ function Home() {
             price={2119.99}
             whole={"2,119"}
             fraction={99}
-            image={require("./img/macbookpro_16inch.webp")}
+            image={require("../../img/macbookpro_16inch.webp")}
             rating={5}
           />
         </div>
@@ -59,13 +59,13 @@ function Home() {
             price={12.98}
             whole={12}
             fraction={98}
-            image={require("./img/javascript_mug.webp")}
+            image={require("../../img/javascript_mug.webp")}
             rating={4}
           />
           <Portfolio
             title={"React developer. Reliable, hardworking, accurate & team player"}
             price={"get in touch"}
-            image={require("./img/profile-pic.webp")}
+            image={require("../../img/profile-pic.webp")}
             rating={5}
           />
           <Product
@@ -74,7 +74,7 @@ function Home() {
             price={843.87}
             whole={843}
             fraction={87}
-            image={require("./img/dell_monitor.webp")}
+            image={require("../../img/dell_monitor.webp")}
             rating={4}
           />
         </div>
@@ -86,7 +86,7 @@ function Home() {
               price={129.45}
               whole={129}
               fraction={45}
-              image={require("./img/IBM_Model_M.webp")}
+              image={require("../../img/IBM_Model_M.webp")}
               rating={2}
             />
             <Product
@@ -95,7 +95,7 @@ function Home() {
               price={98.99}
               whole={98}
               fraction={99}
-              image={require("./img/Microsoft_Windows.webp")}
+              image={require("../../img/Microsoft_Windows.webp")}
               rating={5}
             />
           </div>
@@ -108,7 +108,7 @@ function Home() {
               price={27.99}
               whole={27}
               fraction={99}
-              image={require("./img/amazon-echo.webp")}
+              image={require("../../img/amazon-echo.webp")}
               rating={4}
             />
             <Product
@@ -119,7 +119,7 @@ function Home() {
               price={39.99}
               whole={39}
               fraction={99}
-              image={require("./img/fire_stick.webp")}
+              image={require("../../img/fire_stick.webp")}
               rating={4}
             />
             <Product
@@ -128,7 +128,7 @@ function Home() {
               price={46.72}
               whole={46}
               fraction={72}
-              image={require("./img/van_gogh.webp")}
+              image={require("../../img/van_gogh.webp")}
               rating={4}
             />
           </div>

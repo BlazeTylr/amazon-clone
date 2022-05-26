@@ -1,10 +1,10 @@
 import React from "react";
 import "./Payment.css";
-import { useStateValue } from "./StateProvider";
-import CheckoutProduct from "./CheckoutProduct";
+import { useStateValue } from "../../StateProvider";
+import CheckoutProduct from "../checkoutProduct/CheckoutProduct";
 import { Link } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
-import { getBasketTotal } from "./reducer";
+import { getBasketTotal } from "../../reducer";
 import { useNavigate } from "react-router-dom";
 
 function Payment() {
@@ -25,7 +25,7 @@ function Payment() {
         <div className="payment__logobox">
           <Link to="/">
             <img
-              src={require("./img/amazon_logo_dark.webp")}
+              src={require("../../img/amazon_logo_dark.webp")}
               alt="amazon logo"
               className="payment__logo"
             />

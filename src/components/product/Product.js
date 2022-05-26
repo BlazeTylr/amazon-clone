@@ -1,7 +1,7 @@
 import React from "react";
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../StateProvider";
 
 //////////////////////////////////
 // Reveal sections

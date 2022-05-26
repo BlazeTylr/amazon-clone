@@ -53,7 +53,7 @@
 }
 
 .footer__logo {
-  background-image: url("./img/amazon_logo.png");
+  background-image: url("../../img/amazon_logo.png");
   background-size: cover;
   width: 7.6rem;
   height: 2.3rem;

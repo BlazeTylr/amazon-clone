@@ -1,5 +1,5 @@
 import React from "react";
-import "./Product.css";
+import "../product/Product";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import { ExternalLink } from "react-external-link";
 
@@ -28,10 +28,6 @@ function Portfolio({ id, title, image, price, price_fraction, rating }) {
       <ExternalLink href="https://balazs-szabo-portfolio.netlify.app/">
         <button className="portfolio">Portfolio</button>
       </ExternalLink>
-
-      {/* <a href="https://balazs-szabo-portfolio.netlify.app/" className="portfolio">
-        Portfolio
-      </a> */}
     </div>
   );
 }

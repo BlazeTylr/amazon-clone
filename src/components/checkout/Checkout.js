@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Checkout.css";
-import CheckoutProduct from "./CheckoutProduct";
-import { useStateValue } from "./StateProvider";
-import Subtotal from "./Subtotal";
+import CheckoutProduct from "../checkoutProduct/CheckoutProduct";
+import { useStateValue } from "../../StateProvider";
+import Subtotal from "../subtotal/Subtotal";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -12,7 +12,7 @@ function Checkout() {
       <div className="checkout__creditad">
         <img
           className="checkout__creditcard"
-          src={require("./img/credit_card.png")}
+          src={require("../../img/credit_card.png")}
           alt="credit card"
         />
         <h3 className="credit__primary">

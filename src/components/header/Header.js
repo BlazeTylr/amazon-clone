@@ -3,8 +3,8 @@ import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { Link } from "react-router-dom";
-import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
+import { useStateValue } from "../../StateProvider";
+import { auth } from "../../firebase";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -19,7 +19,11 @@ function Header() {
     <div className="header">
       <div className="header__logo-box">
         <Link to="/">
-          <img src={require("./img/amazon_logo.png")} alt="amazon logo" className="header__logo" />
+          <img
+            src={require("../../img/amazon_logo.png")}
+            alt="amazon logo"
+            className="header__logo"
+          />
         </Link>
         <Link className="link link-logo" to="/">
           <span class="nav-logo-locale">.co.uk</span>
