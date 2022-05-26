@@ -60,12 +60,6 @@
   margin: 0 auto;
 }
 
-@media (max-width: 50em) {
-  /* .footer__columns {
-    padding: 4rem 4rem;
-  } */
-}
-
 @media (max-width: 31.25em) {
   .footer__columns {
     justify-items: center;

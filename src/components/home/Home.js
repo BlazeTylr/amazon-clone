@@ -5,25 +5,6 @@ import Portfolio from "../portfolio/Portfolio";
 import Fade from "react-reveal/Fade";
 
 function Home() {
-  // const allSections = document.querySelectorAll(".section_hide");
-
-  // const revealSection = function (entries, observer) {
-  //   const [entry] = entries;
-  //   if (!entry.isIntersecting) return;
-  //   entry.target.classList.remove("section--hidden");
-  //   observer.unobserve(entry.target);
-  //   entry.preventDefault();
-  // };
-
-  // const sectionObserver = new IntersectionObserver(revealSection, {
-  //   root: null,
-  //   threshold: 0.25,
-  // });
-  // allSections.forEach(function (section) {
-  //   sectionObserver.observe(section);
-  //   section.classList.add("section--hidden");
-  // });
-
   return (
     <div className="home">
       <div className="home__container">

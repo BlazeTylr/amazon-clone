@@ -4,7 +4,6 @@
 
 .payment__items {
   display: flex;
-  /* border: 1px solid lightgray; */
   flex-direction: column;
   margin: 2rem 0;
   padding: 1rem 1rem;
@@ -41,11 +40,6 @@
 span {
   text-decoration: none;
 }
-
-/* .payment__header {
-  margin: 2rem 0;
-  padding: 2rem 0;
-} */
 
 .payment__header > h1 {
   text-align: center;
@@ -157,12 +151,6 @@ button:visited {
     margin-top: 2.3rem;
   }
 }
-
-/* @media (max-width: 37.5em) {
-  .payment-logo-locale {
-    margin-top: 2.3rem;
-  }
-} */
 
 @media (max-width: 31.25em) {
   .payment__header > h1 {
